@@ -167,4 +167,4 @@ include '../autolavado/includes/templates/header.php';
   </section>
   </div> <!--Informacion blog-->
 
-<?php include  '../autolavado/includes/templates/footer.php';?>
+<?php include 'includes/templates/footer.php';?>
