@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Lavado</title>
+  <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+  <header class="header <?php echo isset( $inicio )  ? 'inicio' : '' ?>"> <!-- Proteccion para la validacion de la variable inicio -->
+    <div class="contenedor contenido-header">
+      <div class="barra">
+        <a href="/">
+          <img src="/src/imagenes/logo.webp" alt="logo">
+        </a>
+
+        <div class="mobil-menu">
+          <img src="/src/imagenes/barras.svg" alt="barras-menu">
+        </div>
+
+        <div class="derecha">
+          <img src="/src/imagenes/dark-mode.svg" alt="dark-mode" class="dark-mode-boton">
+          <nav class="navegacion">
+            <a href="/src/pages/nosotros.php">Nosotros</a>
+            <a href="/src/pages/servicios.php">Servicios</a>
+            <a href="/src/pages/promociones.php">Promociones</a>
+            <a href="/src/pages/contacto.php">Contacto</a>
+          </nav>
+        </div>
+
+        
+      </div> <!-- Cierre de barra de navegacion -->
+      <h1>Autolavado express</h1>
+    </div>
+  </header><!--Header-->

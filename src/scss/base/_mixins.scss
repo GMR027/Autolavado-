@@ -1,0 +1,46 @@
+@use 'variables' as v;
+@use 'sass:color';
+
+@mixin telefono {
+  @media (min-width: v.$telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin deskop {
+  @media (min-width: v.$deskop) {
+    @content;
+  }
+}
+
+@mixin grid ($columnas: 1, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  gap: $gap;
+}
+
+@mixin boton($fondo, $display: "in-line") {
+  background-color: $fondo;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: $display;
+  border: none;
+  margin-bottom: 2rem;
+
+  &:hover {
+    background-color: color.adjust($color: $fondo, $lightness: 25%);
+    cursor: pointer;
+  }
+}

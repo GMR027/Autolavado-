@@ -1,0 +1,123 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.no-webp .inicio {
+  background-image: url(/src/imagenes/header.jpg);
+}
+
+.webp .inicio {
+  background-image: url(/src/imagenes/header.webp);
+}
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  align-items: center;
+
+  @include m.tablet {
+    align-items: flex-end;
+  }
+
+  .dark-mode-boton {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(100%);
+    cursor: pointer;
+  }
+}
+
+.header {
+  background-color: v.$amarillo;
+
+  &.inicio {
+    background-position: center center;
+    background-size: cover;
+
+    @include m.tablet {
+      min-height: 70rem;
+    }
+
+    .contenido-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include m.tablet {
+        min-height: 70rem;
+      }
+
+      h1 {
+        color: v.$blanco;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+
+  img {
+    max-width: 20rem;
+    display: block;
+  }
+
+  @include m.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.navegacion {
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease-in-out, opacity .5s linear;
+  height: 0;
+
+  @include m.tablet {
+    display: flex;
+    opacity: 1; 
+    visibility: visible;
+  }
+
+  a {
+    text-decoration: none;
+    color: v.$azul;
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    @include m.tablet {
+      margin-right: 1rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+.mobil-menu {
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}

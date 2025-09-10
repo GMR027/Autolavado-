@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.conetenedor-anuncios {
+@include m.grid;
+}
+
+
+@include m.tablet {
+  
+  .conetenedor-anuncios {
+    @include m.grid(3, 2rem);
+  }
+}
+
+
+.anuncio {
+  background-color: rgb(241, 241, 241);
+}
+
+.contenido-anuncio {
+  padding: 2rem;
+
+  .iconos-servicios {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+      flex: auto;
+      display: flex;
+      align-items: center;
+
+        img {
+        flex: 0 0 5rem;
+        margin-right: 2rem;
+      }
+
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.precio {
+  color: rgb(18, 146, 57);
+  font-weight: bold;
+  font-size: 4rem;
+}

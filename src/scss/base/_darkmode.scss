@@ -1,0 +1,55 @@
+.swhitch-mode {
+  background-color: rgb(114, 114, 114);
+
+  p, a, h1, h2, h3, h4 {
+    color: white;
+  }
+
+  .anuncio  {
+    background-color: rgb(197, 197, 197);
+
+
+    .precio {
+      color: rgb(18, 146, 57);
+      font-weight: bold;
+      font-size: 4rem;
+    }
+
+    .contenido-anuncio {
+      .iconos-servicios {
+        li {
+          img {
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+
+  .resumen-anuncio .iconos-servicios li img{
+      filter: invert(100%);
+    }
+
+    .resumen-anuncio {
+    .precio {
+      color: rgb(18, 146, 57);
+      font-weight: bold;
+      font-size: 4rem;
+    }
+  }
+
+    .formulario {
+      legend, label {
+      color: white;
+    }
+
+    input:not([type="submit"]), textarea, select {
+      padding: 1rem;
+      display: block;
+      width: 100%;
+      color: rgb(0, 0, 0);
+      border: solid 1px grey;
+    }
+  }
+
+}
