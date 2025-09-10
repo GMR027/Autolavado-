@@ -1,6 +1,8 @@
 <?php 
-include '../../includes/templates/header.php';
+include './includes/templates/header.php';
 ?>
+
+
 
 
   <main class="contenedor seccion contenido-centrado">
@@ -13,4 +15,4 @@ include '../../includes/templates/header.php';
     </div>
   </main>
 
-<?php include  '../autolavado/includes/templates/footer.php';?>
+<?php include 'includes/templates/footer.php';?>

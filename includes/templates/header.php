@@ -21,10 +21,10 @@
         <div class="derecha">
           <img src="/src/imagenes/dark-mode.svg" alt="dark-mode" class="dark-mode-boton">
           <nav class="navegacion">
-            <a href="/src/pages/nosotros.php">Nosotros</a>
-            <a href="/src/pages/servicios.php">Servicios</a>
-            <a href="/src/pages/promociones.php">Promociones</a>
-            <a href="/src/pages/contacto.php">Contacto</a>
+            <a href="nosotros.php">Nosotros</a>
+            <a href="servicios.php">Servicios</a>
+            <a href="promociones.php">Promociones</a>
+            <a href="contacto.php">Contacto</a>
           </nav>
         </div>
 
