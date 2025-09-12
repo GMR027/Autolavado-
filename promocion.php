@@ -1,6 +1,9 @@
 <?php 
-include './includes/templates/header.php';
+require  'includes/funciones.php';
+incluirTemplate('header');
 ?>
+
+
 
 
 
@@ -15,4 +18,4 @@ include './includes/templates/header.php';
     </div>
   </main>
 
-<?php include 'includes/templates/footer.php';?>
+<?php incluirTemplate('footer');?>

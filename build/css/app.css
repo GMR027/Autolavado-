@@ -433,6 +433,7 @@ p {
   display: "in-line";
   border: none;
   margin-bottom: 2rem;
+  display: inline-block;
 }
 .boton-amarillo:hover {
   background-color: rgb(246.4534883721, 238.3139534884, 176.0465116279);
