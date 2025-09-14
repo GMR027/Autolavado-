@@ -1,6 +1,6 @@
 <?php 
-$inicio = true;
-include '../autolavado/includes/templates/header.php';
+require  'includes/funciones.php';
+incluirTemplate('header', $inicio = true);
 ?>
 
 
@@ -167,4 +167,4 @@ include '../autolavado/includes/templates/header.php';
   </section>
   </div> <!--Informacion blog-->
 
-<?php include 'includes/templates/footer.php';?>
+<?php incluirTemplate('footer');?>

@@ -11,4 +11,5 @@
 
 .boton-amarillo {
   @include m.boton(v.$amarillo);
+  display: inline-block;
 }
