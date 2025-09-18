@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alerta {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  &.error {
+    background-color: v.$rojo;
+  }
+
+  &.creado {
+    background-color: green;
+  }
+
+  &.actualizado {
+    background-color: rgba(3, 91, 107, 0.699);
+  }
+}
+
+table.servicios {
+  margin-top: 6rem;
+  width: 100%;
+  border-spacing: 0;
+
+  thead {
+    background-color: green;
+    th {
+      color: white;
+      padding: 2rem;
+    }
+  }
+
+  .imagentabla {
+    width: 10rem;
+  }
+}
+
+.formulario .imagenPreview {
+  width: 20rem;
+}
+
+.eliminado {
+  width: 100%;
+}

@@ -3,10 +3,12 @@
 
 .boton-azul-block {
   @include m.boton(v.$azul, block);
+  width: 100%; 
 }
 
 .boton-amarillo-block {
   @include m.boton(v.$amarillo, block);
+  width: 100%; //Se pone 100% de width debido a que este se le esta aplicando a los botones de input
 }
 
 .boton-amarillo {

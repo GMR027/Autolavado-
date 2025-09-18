@@ -311,6 +311,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-padding-top: 0rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -395,6 +396,7 @@ p {
   display: block;
   border: none;
   margin-bottom: 2rem;
+  width: 100%;
 }
 .boton-azul-block:hover {
   background-color: rgb(47.6982758621, 106.4137931034, 253.8017241379);
@@ -414,6 +416,7 @@ p {
   display: block;
   border: none;
   margin-bottom: 2rem;
+  width: 100%;
 }
 .boton-amarillo-block:hover {
   background-color: rgb(246.4534883721, 238.3139534884, 176.0465116279);
@@ -444,7 +447,7 @@ p {
   background-color: rgb(114, 114, 114);
 }
 .swhitch-mode p, .swhitch-mode a, .swhitch-mode h1, .swhitch-mode h2, .swhitch-mode h3, .swhitch-mode h4 {
-  color: white;
+  color: rgb(95, 95, 95);
 }
 .swhitch-mode .anuncio {
   background-color: rgb(197, 197, 197);
@@ -466,14 +469,56 @@ p {
   font-size: 4rem;
 }
 .swhitch-mode .formulario legend, .swhitch-mode .formulario label {
-  color: white;
+  color: rgb(85, 85, 85);
 }
 .swhitch-mode .formulario input:not([type=submit]), .swhitch-mode .formulario textarea, .swhitch-mode .formulario select {
   padding: 1rem;
   display: block;
   width: 100%;
-  color: rgb(0, 0, 0);
+  color: black;
   border: solid 1px grey;
+}
+
+.alerta {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.alerta.error {
+  background-color: #DF201E;
+}
+.alerta.creado {
+  background-color: green;
+}
+.alerta.actualizado {
+  background-color: rgba(3, 91, 107, 0.699);
+}
+
+table.servicios {
+  margin-top: 6rem;
+  width: 100%;
+  border-spacing: 0;
+}
+table.servicios thead {
+  background-color: green;
+}
+table.servicios thead th {
+  color: white;
+  padding: 2rem;
+}
+table.servicios .imagentabla {
+  width: 10rem;
+}
+
+.formulario .imagenPreview {
+  width: 20rem;
+}
+
+.eliminado {
+  width: 100%;
 }
 
 .no-webp .inicio {
@@ -799,7 +844,7 @@ blockquote::before {
   padding: 1rem;
   display: block;
   width: 100%;
-  color: rgb(207, 207, 207);
+  color: black;
   border: solid 1px grey;
 }
 .formulario textarea {
